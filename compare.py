@@ -35,7 +35,7 @@ class Tee:
 
 
 def load_module(folder: str):
-    """Load modul assistant.py dari folder langgrap/ atau langchain/."""
+    """Load modul assistant.py dari folder langgraph/ atau langchain/."""
     sys.path.insert(0, os.path.join(ROOT, folder))
     spec = importlib.util.spec_from_file_location(
         f"{folder}_assistant", os.path.join(ROOT, folder, "assistant.py")
@@ -247,7 +247,7 @@ if __name__ == "__main__":
     print(f"  {QUESTION}")
 
     experiments = [
-        ("LangGraph", "langgrap"),
+        ("LangGraph", "langgraph"),
         ("LangChain", "langchain"),
     ]
 

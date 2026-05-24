@@ -32,7 +32,7 @@ react-agent-comparison/
 │   ├── utils.py           # Helper print message
 │   ├── config.py          # Pertanyaan shared (QUESTION)
 │   └── prompt.md          # System prompt
-├── langgrap/              # Versi LangGraph (graph manual)
+├── langgraph/             # Versi LangGraph (graph manual)
 │   ├── assistant.py
 │   ├── main.py
 │   └── .env.example
@@ -101,7 +101,7 @@ pip install -r requirements.txt
 Salin `.env.example` di masing-masing folder dan isi dengan API key:
 
 ```bash
-cp langgrap/.env.example langgrap/.env
+cp langgraph/.env.example langgraph/.env
 cp langchain/.env.example langchain/.env
 ```
 
@@ -115,7 +115,7 @@ OPENAI_API_KEY=your_api_key_here
 
 ```bash
 # Versi LangGraph
-cd langgrap && python main.py
+cd langgraph && python main.py
 
 # Versi LangChain (dari root project)
 cd langchain && python main.py
